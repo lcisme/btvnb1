@@ -31,13 +31,6 @@ public class bai3 {
             a[i] = scan.nextInt();
         }
     }
-    public void xuatMang()
-    {
-        for (int i=0; i<a.length;i++){
-            System.out.print(a[i]+ "\t");
-        }
-        System.out.println();
-    }
     public void xuatSoNguyenTo(){
         for (int i=0; i<a.length;i++){
             if(KiemTraNguyenTo (a[i])){
@@ -47,10 +40,8 @@ public class bai3 {
         }
     }
     public static void main(String[] args) {
-        Scanner kt = new Scanner(System.in);
+        bai3 kt = new bai3();
         kt.nhapMang();
-        System.out.println("Mảng đã nhập là:");
-        kt.xuatMang();
         System.out.println("Các số nguyên tố trong mảng đã nhập: ");
         kt.xuatSoNguyenTo();
     }
